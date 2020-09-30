@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-padding-top: 15px;
+}
+
+body {
+    font-family: 'Noto Serif', serif;
+}
+
+div#interface {
+    display: flex;
+}
+
+h1 {
+    margin-top: -7vh;
+    color: rgba(255, 255, 255, 0);
+}
+
+h2 {
+    margin-top: 3%;
+    font-size: 1.4em;
+}
+
+/*Nav section below*/
+
+aside#nav-section {
+    width: 22%;
+    height: 100%;
+    position: fixed;
+    border-right: 1px solid black;
+    color: #eee;
+    background: #373739;
+    overflow-y: scroll;
+}
+
+header#nav-header {
+    padding: 1% 5% 1% 10%;
+    font-size: 1.3em;
+    background: #202021;
+}
+
+nav#navbar ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+    overflow-x: hidden;
+}
+
+nav#navbar ul li {
+    display: block;
+    border-top: 1px solid #1D1C21;
+    padding: 10px 0 10px 10%;
+}
+
+nav#navbar ul li:hover {
+    transform: translateX(2%);
+    transition: all 0.3s;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: unset;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    background-color: #222223;
+}
+
+@media (max-width: 1200px) {
+    header#nav-header {
+        font-size: 1em;
+    }
+}
+
+/*Nav section above*/
+
+/*Main section below*/
+
+main {
+    width: 78%;
+    margin-left: 22%;
+    padding: 0 3% 2%;
+    font-size: 0.9em;
+}
+
+
+code {
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+    background: #eee;
+    line-height: 2;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/*Main section above*/
